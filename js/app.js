@@ -14,7 +14,7 @@ function MenuItemsController(MenuItemsService) {
   var promise = MenuItemsService.getMenuItems();
 
   promise.then(function (response) {
-    menu.items = response.data;
+    menu.items = response.data.menu_items;
   })
   .catch(function (error) {
     console.log("Something went terribly wrong.");
