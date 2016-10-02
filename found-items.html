@@ -1,0 +1,17 @@
+<ul class="">
+	<li ng-repeat="item in found" class="list-item">
+		<span class="label label-name">Name:</span>
+
+		<p ng-bind="item.name" class="label label-value"></p>
+
+		<span class="label label-name">Short name:</span>
+
+		<p ng-bind="item.short_name" class="label label-value"></p>
+
+		<span class="label label-name">Description:</span>
+
+		<p ng-bind="item.description" class="label label-value"></p>
+
+		<button class="btn" ng-click="onRemove({itemIndex: $index})">Don't want this one!</button>
+	</li>
+</ul>
