@@ -50,3 +50,4 @@ input[type="text"] {
     transform: rotate(360deg);
   }
 }
+.label {float: none; clear: both; font-weight: bold}
