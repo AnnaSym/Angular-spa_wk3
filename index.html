@@ -10,10 +10,10 @@
 <h1>Narrow Down Your Chinese Menu Choice</h1> 
 <div class="form-group"> 
 <input type="text" placeholder="search term" ng-model="narrowcontroller.searchTerm" class="form-control"> 
-</div> 
+
 <div class="form-group narrow-button"> 
 <button ng-click="narrowcontroller.fetchData(narrowcontroller.searchTerm)" class="btn btn-spartan">Narrow It Down For Me!</button>
-  
+  </div> 
   <div class="message info-message" ng-show="narrowcontroller.Loading">Loading...</div> 
   <div class="message error-message" ng-show="!!narrowcontroller.found&&!narrowcontroller.found.length">Nothing found</div>
   <div class ="clear" style ="float: none; clear:both">
