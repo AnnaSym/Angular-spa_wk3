@@ -12,10 +12,14 @@
 <input type="text" placeholder="search term" ng-model="narrowcontroller.searchTerm" class="form-control"> 
 </div> 
 <div class="form-group narrow-button"> 
-<button ng-click="narrowcontroller.fetchData(narrowcontroller.searchTerm)" class="btn btn-spartan">Narrow It Down For Me!</button> <div class="message info-message" ng-show="narrowcontroller.Loading">Loading...</p> 
-<div class="message error-message" ng-show="!!narrowcontroller.found&&!narrowcontroller.found.length">Nothing found</p> 
+<button ng-click="narrowcontroller.fetchData(narrowcontroller.searchTerm)" class="btn btn-spartan">Narrow It Down For Me!</button>
+  
+  <div class="message info-message" ng-show="narrowcontroller.Loading">Loading...</div> 
+  <div class="message error-message" ng-show="!!narrowcontroller.found&&!narrowcontroller.found.length">Nothing found</div> 
 <found-items found="narrowcontroller.found" on-remove="narrowcontroller.removeItem(itemIndex)"></found-items> 
-</div> 
-</div> <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script> <script src="js/app.js"></script> 
+</div> </div> 
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js">
+  </script> <script src="js/app.js"></script> 
 </body> 
 </html> 
