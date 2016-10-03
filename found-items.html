@@ -1,12 +1,12 @@
-<ul class="">
+<ol class="list">
 	<li ng-repeat="item in found" class="list-item">
 		
-		<a href="" ng-click="item.short_name">(<span ng-bind="item.short_name" class="label-label-shortname"></span>)<span ng-bind="item.name" class="label label-name"></span></a>
+		<a href="" ng-click="item.short_name">(<span ng-bind="item.short_name" class="label-label-shortname"></span>)- <span ng-bind="item.name" class="label label-name"></span></a>
 
-		<span class="label label-description">Description:</span>
+		<p class="label label-description">Description:</p>
 
 		<p ng-bind="item.description" class="label label-value"></p>
 
 		<button class="btn" ng-click="onRemove({itemIndex: $index})">Don't want this one!</button>
 	</li>
-</ul>
+</ol>
