@@ -1,13 +1,9 @@
 <ul class="">
 	<li ng-repeat="item in found" class="list-item">
 		
-		<a href="" ng-click="item.short_name">(<p><span ng-bind="item.short_name"></span>)<span ng-bind="item.name" class="label label-value"></span></p></a>
+		<a href="" ng-click="item.short_name">(<span ng-bind="item.short_name" class="label-label-shortname"></span>)<span ng-bind="item.name" class="label label-name"></span></a>
 
-		<span class="label label-name">Short name:</span>
-
-		<a href="" ng-click="item.short_name"><p ng-bind="item.short_name"></p></a>
-
-		<span class="label label-name">Description:</span>
+		<span class="label label-description">Description:</span>
 
 		<p ng-bind="item.description" class="label label-value"></p>
 
