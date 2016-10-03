@@ -1,8 +1,7 @@
 <ul class="">
 	<li ng-repeat="item in found" class="list-item">
-		<span class="label label-name">Name:</span>
-
-		<p ng-bind="item.name" class="label label-value"></p>
+		
+		<a href="" ng-click="item.short_name">(<p ng-bind="item.short_name"></p>)<p ng-bind="item.name" class="label label-value"></p></a>
 
 		<span class="label label-name">Short name:</span>
 
